@@ -16,12 +16,8 @@ namespace human
             public int Intelligence {get;set;} = 3;
             public int Dexterity {get;set;} = 3;
             private int Health {get;set;} = 100;
-            public int health {
-                get { return health; }
-            }
-
-            public Human(string name){
-                Name = name;
+            public int Health {
+                get { return Health; }
             }
 
             public Human(string name, int strength, int intelligence, int dexterity, int health){
