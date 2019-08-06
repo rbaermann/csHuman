@@ -29,9 +29,8 @@ namespace human
             }
 
             public int Attack(Human target){
-                var Enemy = (Human) enemy;
-                Enemy.Health -= 5 * Human.Strength;
-                return Enemy.Health;
+                target.Health -= 5 * Strength;
+                return target.Health;
             }
         }
     }
