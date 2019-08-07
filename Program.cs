@@ -16,6 +16,7 @@ namespace human
             public int Intelligence {get;set;}
             public int Dexterity {get;set;}
             private int health {get;set;}
+            private int fullHealth {get;set;}
             public int Health {
                 get { return health; }
             }
@@ -29,12 +30,13 @@ namespace human
                 int fullHealth = health;
             }
 
-            public Human(string name, int strength, int intelligence, int dexterity, int health) {
+            public Human(string name, int strength, int intelligence, int dexterity, int health, int fullhp) {
                 Name = name;
                 Strength = strength;
                 Intelligence = intelligence;
                 Dexterity = dexterity;
                 health = health;
+                fullHealth = fullhp;
             }
 
             public virtual int Attack(Human target) {
